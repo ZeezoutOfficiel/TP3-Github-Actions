@@ -1,5 +1,5 @@
-name: BuildTest
-run-name: ${{ BuildTest.actor }} is testing out GitHub Actions 🚀
+name: Build
+run-name: ${{ Build.actor }} is testing out GitHub Actions 🚀
 on:
   push:
     branches: [ main ]
