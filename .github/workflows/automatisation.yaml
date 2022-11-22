@@ -12,8 +12,8 @@ jobs:
     defaults:
       run:
         working-directory: ./api
-   steps:
-       - name: Check out repository code
-         uses: actions/checkout@v3
-       - run: yarn install
-       - run: yarn test
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: yarn install
+      - run: yarn test
