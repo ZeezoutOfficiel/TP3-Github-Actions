@@ -24,7 +24,8 @@ jobs:
         uses: docker/metadata-action@v1.0
         with:
          # images: my-docker-hub-namespace/my-docker-hub-repository
-      
+         images: zeezoutofficiel/tp3-github_actions
+         
       - name: Build and push Docker image
         #uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         #uses: docker push zeezoutofficiel/tp3-github_actions:tagname
