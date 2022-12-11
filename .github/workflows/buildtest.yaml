@@ -1,5 +1,5 @@
 name: Build Test
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ github.actor }} is operating the unity tests 🚀
 on:
   push:
     branches: [ main ]
@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./api
+        working-directory: ./api #changing the script directory
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: yarn install
-      - run: yarn test
+      - run: yarn install #Dependencies install
+      - run: yarn test #Unity tests
