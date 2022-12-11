@@ -1,9 +1,7 @@
 name: Publish Docker image
 run-name: ${{ github.actor }} is trying to create and publish an image.
 
-on:
-  release:
-    types: [published]
+on: push
 
 jobs:
   push_to_registry:
